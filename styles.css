@@ -90,7 +90,6 @@ body {
 .page_wrapper {
   display: flex;
   flex-direction: column;
-  /*gap: 82px;*/
 }
 
 /*=================================
@@ -272,12 +271,6 @@ New task
   @media (min-width: 768px) {
     font-size: calc(20 / 16 * 1rem);
   }
-
-  /*
-  @media (min-width: 1920px) {
-    font-size: calc(24 / 16 * 1rem);
-  }
-  */
 }
 
 .newTask_frame {
@@ -305,12 +298,6 @@ New task
   @media (min-width: 768px) {
     font-size: calc(20 / 16 * 1rem);
   }
-
-  /*
-  @media (min-width: 1920px) {
-    font-size: calc(24 / 16 * 1rem);
-  }
-    */
 }
 
 .newTask__frame_form_input,
@@ -329,12 +316,6 @@ New task
     font-size: calc(16 / 16 * 1rem);
   }
 
-  /*
-  @media (min-width: 1920px) {
-    font-size: calc(20 / 16 * 1rem);
-  }
-    */
-
   &::placeholder {
     font-family: var(--font-text);
     font-size: calc(12 / 16 * 1rem);
@@ -343,12 +324,6 @@ New task
     @media (min-width: 768px) {
       font-size: calc(16 / 16 * 1rem);
     }
-
-    /*
-    @media (min-width: 1920px) {
-      font-size: calc(20 / 16 * 1rem);
-    }
-      */
   }
 
   &:focus {
@@ -380,14 +355,6 @@ New task
     padding-inline: 20px;
     padding-block: 32px;
   }
-
-  /*
-  @media (min-width: 1920px) {
-    gap: 40px;
-    padding-inline: 20px;
-    padding-block: 40px;
-  }
-  */
 }
 
 .newTask__frame_form_title {
@@ -424,14 +391,6 @@ New task
     padding-block: 24px;
   }
 
-  /*
-
-  @media (min-width: 1920px) {
-    font-size: calc(24 / 16 * 1rem);
-    padding-block: 40px;
-  }
-
-  */
   &:hover {
     cursor: pointer;
   }
@@ -501,14 +460,6 @@ Notes
     padding-block: 32px;
     padding-inline: 16px;
   }
-
-  /*
-  @media (min-width: 1920px) {
-    font-size: calc(24 / 16 * 1rem);
-    padding-block: 36px;
-    padding-inline: 20px;
-  }
-    */
 }
 
 .note_group_frame_description {
@@ -523,13 +474,6 @@ Notes
     font-size: calc(16 / 16 * 1rem);
     padding-inline: 16px;
   }
-
-  /*
-  @media (min-width: 1920px) {
-    font-size: calc(20 / 16 * 1rem);
-    padding-inline: 20px;
-  }
-    */
 }
 
 .note_group_frame_buttons_done,
@@ -555,13 +499,6 @@ Notes
     padding-block: 29px;
   }
 
-  /*
-  @media (min-width: 1920px) {
-    font-size: calc(24 / 16 * 1rem);
-    padding-block: 34px;
-  }
-    */
-
   &:hover {
     font-weight: 500;
   }
@@ -578,13 +515,6 @@ Notes
     font-size: calc(16 / 16 * 1rem);
     margin-block: auto;
   }
-
-  /*
-  @media (min-width: 1920px) {
-    font-size: calc(20 / 16 * 1rem);
-    margin-block: auto;
-  }
-    */
 
   &:hover {
     font-weight: 400;
