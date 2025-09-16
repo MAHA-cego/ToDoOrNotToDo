@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page_wrapper">
+        <header>
+            <div class="nav_grid">
+                <nav class="nav">
+                    <div class="navbar">
+                        <ul class="navbar_list">
+                            <li class="navbar_list_el"><a href="#"
+                            data-filter="all"    
+                            class="navbar_list_el_link" >All</a></li>
+                            <li class="navbar_list_el"><a href="#"
+                            data-filter="current"  class="navbar_list_el_link"
+                            >Current</a></li>
+                            <li class="navbar_list_el"><a href="#"
+                            data-filter="done"  class="navbar_list_el_link"
+                            >Done</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main_grid">
+                <div class="main_grid_left">
+                    <div class="title">
+                        <h1 class="title_text title_text-1">TO DO</h1>
+                        <h2 class="title_text title_text-2">OR NOT TO DO</h2>
+                    </div>
+                    <div class="newTask">
+                        <h3 class="newTask_title">NEW TASK:</h3>
+                        <div class="newTask_frame">
+                            <form action="" method="get" class="newTask__frame_form" id="form">
+                                <div class="newTask__frame_form_title">
+                                    <label for="title" class="newTask__frame_form_title_label">TITLE:</label>
+                                    <textarea name="title" id="title" placeholder="Your title..." class="newTask__frame_form_input"></textarea>
+                                </div>
+                                <div class="newTask__frame_form_description">
+                                    <label for="description" class="newTask__frame_form_description_label">DESCRIPTION:</label>
+                                    <textarea name="description" id="description" placeholder="Your description..." class="newTask__frame_form_description_input"></textarea>
+                                </div>
+                                <div class="newTask__frame_form_inputs">
+                                    <input type="button" value="DELETE" class="newTask__frame_form_inputs_delete"
+                                    id="deleteBtn">
+                                    <input type="submit" value="CREATE" class="newTask__frame_form_inputs_create">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_grid_right">
+                    <div class="nav_grid-phone">
+                        <nav class="nav">
+                            <div class="navbar">
+                                <ul class="navbar_list">
+                                    <li class="navbar_list_el"><a href="#"
+                                         data-filter="all"    
+                                         class="navbar_list_el_link" >All</a></li>
+                                    <li class="navbar_list_el"><a href="#"
+                                        data-filter="current"  class="navbar_list_el_link"
+                                        >Current</a></li>
+                                    <li class="navbar_list_el"><a href="#"
+                                        data-filter="done"  class="navbar_list_el_link"
+                                        >Done</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="notes">
+                        <ul class="notes_list" id="notesList">
+                            <li class="note">
+                                <div class="note_group">
+                                    <div class="note_group_frame">
+                                        <h3 class="note_group_frame_title">Title</h3>
+                                        <p class="note_group_frame_description">Description</p>
+                                    </div>
+                                    <div class="note_group_frame_buttons">
+                                        <button class="note_group_frame_buttons_done">Done</button>
+                                        <button class="note_group_frame_buttons_edit">Edit</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pageSelector">
+                        <ul class="pageSelector_list">
+                            <li class="pageSelector_list_el"><a href="" class="pageSelector_list_el_link pageSelector_list_el_link_selected">1</a></li>
+                            <li class="pageSelector_list_el"><a href="" class="pageSelector_list_el_link">2</a></li>
+                            <li class="pageSelector_list_el"><a href="" class="pageSelector_list_el_link">3</a></li>
+                            <li class="pageSelector_list_el"><a href="" class="pageSelector_list_el_link">4</a></li>
+                            <li class="pageSelector_list_el"><a href="" class="pageSelector_list_el_link">5</a></li>
+                            <li class="pageSelector_list_el"><p>...</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             <div class="editTask_frame">
+                            <form action="" method="get" class="editTask__frame_form" id="editForm">
+                                <div class="editTask__frame_form_title">
+                                    <label for="title" class="editTask__frame_form_title_label">TITLE:</label>
+                                    <textarea name="editTitle" id="editTitle" placeholder="Your title..." class="editTask__frame_form_input"></textarea>
+                                </div>
+                                <div class="editTask__frame_form_description">
+                                    <label for="description" class="editTask__frame_form_description_label">DESCRIPTION:</label>
+                                    <textarea name="editDescription" id="editDescription" placeholder="Your description..." class="editTask__frame_form_description_input"></textarea>
+                                </div>
+                                <div class="editTask__frame_form_inputs">
+                                    <input type="button" value="CANCEL" class="editTask__frame_form_inputs_cancel"
+                                    id="editCancelBtn">
+                                    <input type="button" value="DELETE" class="editTask__frame_form_inputs_delete"
+                                    id="editDeleteBtn">
+                                    <input type="submit" value="EDIT" class="editTask__frame_form_inputs_edit">
+                                </div>
+                            </form>
+                        </div>
+            <div class="confirmation" id="confirmationForm">
+                <p class="confimation_text">Are you sure? This note will be permenantly deleted.</p>
+                <div class="confirmation_btns">
+                    <button class="confimation_btns_noBtn" id="confirmationBtnNo">NO</button>
+                    <button class="confirmation_btns_yesBtn" id="confirmationBtnYes">YES</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
